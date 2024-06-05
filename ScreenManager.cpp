@@ -53,10 +53,10 @@ void ScreenManager::initializeSelectPanel(sf::Vector2i res, float x, float y, fl
 
 	m_text.setFillColor(sf::Color::White);
 	m_text.setString("Select sorting algorithm:");
-	m_font.loadFromFile("fonts/game_over.ttf");
+	m_font.loadFromFile("fonts/DroidSans.ttf");
 	m_text.setFont(m_font);
-	m_text.setPosition(sf::Vector2f(m_buttonPadding, m_buttonHeight));
-	m_text.setCharacterSize(100);
+	m_text.setPosition(sf::Vector2f(m_buttonPadding, 2 * m_buttonPadding + m_buttonHeight));
+	m_text.setCharacterSize(35);
 	initializeSelectButtons();
 }
 
@@ -130,6 +130,8 @@ void ScreenManager::initializeSelectButtons()
 	addButton(3 * m_buttonWidth + 3 * m_buttonPadding, m_buttonPadding, m_buttonWidth, m_buttonHeight, sf::Color(127, 127, 127), "Exit");
 	addButton(m_buttonPadding, (m_buttonHeight + m_buttonPadding) * 3, m_buttonWidth, m_buttonHeight, sf::Color(127, 127, 127), "Bubble Sort");
 	addButton(m_buttonPadding, (m_buttonHeight + m_buttonPadding) * 4, m_buttonWidth, m_buttonHeight, sf::Color(127, 127, 127), "Quicksort");
+	addButton(m_buttonPadding, (m_buttonHeight + m_buttonPadding) * 5, m_buttonWidth, m_buttonHeight, sf::Color(127, 127, 127), "Insertion Sort");
+	addButton(m_buttonPadding, (m_buttonHeight + m_buttonPadding) * 6, m_buttonWidth, m_buttonHeight, sf::Color(127, 127, 127), "Merge Sort");
 }
 
 void ScreenManager::drawSortPanel(std::vector<SortElement> values)

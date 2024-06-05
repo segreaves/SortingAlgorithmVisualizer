@@ -51,5 +51,7 @@ void InputHandler::handleLeftClick(std::string& buttonInteractedWith, sf::Render
 	if (buttonInteractedWith == "Shuffle") m_sortManager->generateRandomValues();
 	if (buttonInteractedWith == "Bubble Sort") m_sortManager->setSorter(SortAlgorithm::bubblesort);
 	if (buttonInteractedWith == "Quicksort") m_sortManager->setSorter(SortAlgorithm::quicksort);
+	if (buttonInteractedWith == "Insertion Sort") m_sortManager->setSorter(SortAlgorithm::insertionsort);
+	if (buttonInteractedWith == "Merge Sort") m_sortManager->setSorter(SortAlgorithm::mergesort);
 	if (buttonInteractedWith == "Exit") window.close();
 }
