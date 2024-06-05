@@ -20,5 +20,6 @@ This project has been created as an initial exploration of the Simple Fast Media
 There are tradeoffs to the structuring of this code:
 #### Pros
 Easy to extend to new algorithms with minimal modification of the original algorithm code (no need to change algorithm to make it iteration-based)
+The lambda given to the sort() function in Sorters/SortManager.cpp can be extended to perform any number of things, such as counting the number of comparisons done by each algorithm.
 #### Cons
 Because this method of visualization relies on SFML's sleep() function, it is dificult to extend this visualizer to a grid-based one with multiple algorithms running simultaneously. For this, an iteration-based visualizer is better suited.
